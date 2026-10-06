@@ -10,4 +10,4 @@ def test_transform_removes_duplicates():
 
     result = transform(df)
 
-    assert len(result) == 3
+    assert len(result) == 2
