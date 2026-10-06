@@ -1,13 +1,12 @@
-import pandas as pd
-
-
 def transform(df):
     df = df.copy()
+
+    # Fill missing values
+    df = df.fillna(0)
 
     # Remove duplicate rows
     df = df.drop_duplicates()
 
-    # Remove rows with missing values
-    df = df.dropna()
+    print(f"Rows after transformation: {len(df)}")
 
     return df
